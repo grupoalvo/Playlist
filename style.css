@@ -12,8 +12,8 @@ div#white-player {
   height: 100%;
   max-width: 95%;
   max-height: 95%;
-  background-color: #FFFFFF;
-  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.12);
+  background-color: #444444ff;
+  box-shadow: 0px 12px 24px rgba(, 0, 0, 0.12);
   border-radius: 8px;
   font-family: "Lato", sans-serif;
   margin-left: auto;
@@ -32,7 +32,7 @@ div.white-player-top {
     div.white-player-top div.center {
       text-align: center; }
   div.white-player-top span.now-playing {
-    color: #414344;
+    color: #ffffff;
     font-family: "Lato", sans-serif;
     line-height: 64px;
     font-weight: 600; }
@@ -51,7 +51,7 @@ div#white-player-center img.main-album-art {
   width: 80%;
   height: 80%; }
 div#white-player-center div.song-meta-data span.song-name {
-  color: #414344;
+  color: #ffffff;
   display: block;
   text-align: center;
   font-size: 20px; }
@@ -327,7 +327,7 @@ div#white-player-playlist-container {
   right: 0;
   left: 0;
   bottom: 0;
-  background-color: white;
+  background-color: #444444ff;
   z-index: 9999;
   display: none;
   border-radius: 8px; }
@@ -339,7 +339,7 @@ div.white-player-playlist-top {
   div.white-player-playlist-top div {
     flex: 1; }
     div.white-player-playlist-top div span.queue {
-      color: #414344;
+      color: #ffffff;
       font-family: "Lato", sans-serif;
       line-height: 64px;
       font-weight: 600; }
@@ -352,11 +352,11 @@ div.white-player-playlist-top {
 div.white-player-up-next {
   margin-top: 6px;
   padding-left: 20px;
-  font-size: 24px;
-  color: #414344; }
+  font-size: 20px;
+  color: #ffffff; }
 
 div.white-player-playlist {
-  margin-top: 32px;
+  margin-top: 20px;
   height: calc( 100% - 234px );
   overflow-y: scroll; }
 
@@ -380,7 +380,7 @@ div.white-player-playlist-song {
     margin-left: 15px;
     width: calc( 100% - 80px ); }
     div.white-player-playlist-song div.playlist-song-meta span.playlist-song-name {
-      color: #414344;
+      color: #ffffff;
       font-size: 14px;
       display: block;
       width: 100%;
@@ -402,7 +402,7 @@ div.white-player-playlist-song::after {
   clear: both; }
 
 div.white-player-playlist-controls {
-  background-color: #F5F5F6;
+  background-color: #444444ff;
   border-radius: 8px;
   padding: 16px; }
   div.white-player-playlist-controls img.playlist-album-art {
@@ -421,7 +421,7 @@ div.white-player-playlist-controls {
       vertical-align: middle; }
       div.white-player-playlist-controls div.playlist-controls div.playlist-meta-data span.song-name {
         display: block;
-        color: #414344;
+        color: #ffffff;
         font-size: 20px;
         white-space: nowrap;
         overflow: hidden;
