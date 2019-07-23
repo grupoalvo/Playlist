@@ -25,8 +25,8 @@ let vue = new Vue({
     songs: [
       {
         id: 1,
-        title: "Wow",
-        artist: "Post Malone",
+        title: "Capítulo I",
+        artist: "CTB",
         album: "",
         url:
           "https://res.cloudinary.com/dmf10fesn/video/upload/v1548882863/audio/Post_Malone_-_Wow._playvk.com.mp3",
