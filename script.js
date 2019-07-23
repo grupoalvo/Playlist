@@ -60,18 +60,18 @@ for( var i = 0; i < songElements.length; i++ ){
 Amplitude.init({
 	"songs": [
 		{
-			"name": "Risin' High (feat Raashan Ahmad)",
-			"artist": "Ancient Astronauts",
-			"album": "We Are to Answer",
-			"url": "https://521dimensions.com/song/Ancient Astronauts - Risin' High (feat Raashan Ahmad).mp3",
-			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/we-are-to-answer.jpg"
+			"name": "Capítulo I",
+			"artist": "CTB",
+			"album": "",
+			"url": "https://res.cloudinary.com/thay01/video/upload/v1563287942/Audio/Cap01_ayjwz3.mp3",
+			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1563827037/Images%20App/001_ceuz2c.jpg"
 		},
 		{
-			"name": "The Gun",
-			"artist": "Lorn",
-			"album": "Ask The Dust",
-			"url": "https://521dimensions.com/song/08 The Gun.mp3",
-			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/ask-the-dust.jpg"
+			"name": "Capítulo II - Seção I",
+			"artist": "CTB",
+			"album": "",
+			"url": "https://res.cloudinary.com/thay01/video/upload/v1563287942/Audio/Cap02s1_dxwdat.mp3",
+			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1563845795/Images%20App/002_iqzsbv.jpg"
 		},
 		{
 			"name": "Anvil",
