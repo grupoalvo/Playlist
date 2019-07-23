@@ -3,276 +3,265 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Flat Black Player</title>
-  
-  
-  
-      <link rel="stylesheet" href="./style.css">
+  <title>Responsive Audio Player</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
-  
+  <link rel='stylesheet' href='http://cdn.plyr.io/3.4.7/plyr.css'>
+
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+      /* Font Family
+================================================== */
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
+
+
+/* Global Styles
+================================================== */
+
+html,body {
+-webkit-font-smoothing:antialiased;
+-webkit-text-size-adjust:100%;
+background-color:#444444ff;
+color:#fff;
+font-size:1.05rem;
+font-family:"Oxygen", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-weight:300;
+letter-spacing:.025rem;
+line-height:1.618;
+padding:1rem 0;
+}
+
+*,::before,::after {
+box-sizing:border-box;
+}
+
+* {
+-webkit-tap-highlight-color:rgba(0,0,0,0);
+-webkit-tap-highlight-color:transparent;
+}
+
+
+/* Setup
+================================================== */
+
+.container { position:relative; margin:0 auto; max-width:800px; width:100%; }
+.column { width:inherit; }
+
+
+/* Typography / Links
+================================================== */
+
+p { color:#fff; display:block; font-size:.9rem; font-weight:400; margin:0 0 2px; }
+
+a,a:visited { color:#8cc3e6; outline:0; text-decoration:underline; }
+a:hover,a:focus { color:#bbdef5; }
+p a,p a:visited { line-height:inherit; }
+
+
+/* Misc.
+================================================== */
+
+.add-bottom { margin-bottom:2rem !important; }
+.left { float:left; }
+.right { float:right; }
+.center { text-align:center; }
+.hidden { display:none; }
+
+.no-support {
+margin:2rem auto;
+text-align:center;
+width:90%;
+}
+
+
+/* Audio Player Styles
+================================================== */
+
+audio {
+display:none;
+}
+
+#audiowrap,
+#plwrap {
+margin:0 auto;
+}
+
+#tracks {
+font-size:0;
+position:relative;
+text-align:center;
+}
+
+#nowPlay {
+display:block;
+font-size:0;
+}
+
+#nowPlay span {
+display:inline-block;
+font-size:1.05rem;
+vertical-align:top;
+}
+
+#nowPlay span#npAction {
+padding:21px;
+width:30%;
+}
+
+#nowPlay span#npTitle {
+padding:21px;
+text-align:right;
+width:70%;
+}
+
+#plList li {
+cursor:pointer;
+display:block;
+margin:0;
+padding:21px 0;
+}
+
+#plList li:hover {
+background-color:rgba(60, 179, 114, 0.856);
+}
+
+.plItem {
+position:relative;
+}
+
+.plTitle {
+left:50px;
+overflow:hidden;
+position:absolute;
+right:65px;
+text-overflow:ellipsis;
+top:0;
+white-space:nowrap;
+}
+
+.plNum {
+padding-left:21px;
+width:25px;
+}
+
+.plLength {
+padding-left:21px;
+position:absolute;
+right:21px;
+top:0;
+}
+
+.plSel,
+.plSel:hover {
+background-color:rgba(0,0,0,.1);
+color:#fff;
+cursor:default !important;
+}
+
+#tracks a {
+border-radius:3px;
+color:#fff;
+cursor:pointer;
+display:inline-block;
+font-size:2rem;
+height:35px;
+line-height:.175;
+margin:0 5px 30px;
+padding:10px;
+text-decoration:none;
+transition:background .3s ease;
+}
+
+#tracks a:last-child {
+margin-left:0;
+}
+
+#tracks a:hover,
+#tracks a:active {
+background-color:rgba(0,0,0,.1);
+color:#fff;
+}
+
+#tracks a::-moz-focus-inner {
+border:0;
+padding:0;
+}
+
+
+/* Plyr Overrides
+================================================== */
+
+.plyr--audio .plyr__controls {
+background-color:transparent;
+border:none;
+color:#fff;
+padding:20px 20px 20px 13px;
+width:100%;
+}
+
+.plyr--audio .plyr__controls button.tab-focus:focus,
+.plyr--audio .plyr__controls button:hover,
+.plyr__play-large {
+background:rgba(0,0,0,.1);
+}
+
+.plyr__progress--played,
+.plyr__volume--display {
+color:rgba(0,0,0,.1);
+}
+
+.plyr--audio .plyr__progress--buffer,
+.plyr--audio .plyr__volume--display {
+background:rgba(0,0,0,.1);
+}
+
+.plyr--audio .plyr__progress--buffer {
+color:rgba(0,0,0,.1);
+}
+
+
+/* Media Queries
+================================================== */
+
+@media only screen and (max-width:600px) {
+    #nowPlay span#npAction { display:none; }
+    #nowPlay span#npTitle { display:block; text-align:center; width:100%; }
+}
+
+    </style>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
 </head>
 
 <body>
 
-  <!DOCTYPE html>
-<html>
-  <head>
-    <title>AmplitudeJS Testing</title>
-
-    <!-- Include font -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
-  </head>
-  <body>
-    <div id="flat-black-player-container">
-      <div id="list-screen" class="slide-in-top">
-        <div id="list-screen-header" class="hide-playlist">
-          <img id="up-arrow" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/up.svg"/>
-          Esconder Playlist
+  <div class="container">
+    <div class="column add-bottom">
+        <div id="mainwrap">
+            <div id="nowPlay">
+                <span id="npAction">Tocando...</span><span id="npTitle"></span>
+            </div>
+            <div id="audiowrap">
+                <div id="audio0">
+                    <audio id="audio1" preload controls>Seu browser não suporta HTML5 Audio! 😢</audio>
+                </div>
+                <div id="tracks">
+                    <a id="btnPrev">&larr;</a><a id="btnNext">&rarr;</a>
+                </div>
+            </div>
+            <div id="plwrap">
+                <ul id="plList"></ul>
+            </div>
         </div>
-
-        <div id="list">
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
-            <span class="song-number-now-playing">
-              <span class="number">1</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
-
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="0"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="0"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="0"></span></span>
-            </div>
-
-            <span class="song-duration">
-              3:30
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1">
-            <span class="song-number-now-playing">
-              <span class="number">2</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
-
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="1"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="1"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="1"></span></span>
-            </div>
-
-            <span class="song-duration">
-              3:16
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2">
-            <span class="song-number-now-playing">
-              <span class="number">3</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
-
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="2"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="2"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="2"></span></span>
-            </div>
-
-            <span class="song-duration">
-              3:32
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="3">
-            <span class="song-number-now-playing">
-              <span class="number">4</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
-
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="3"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="3"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="3"></span></span>
-            </div>
-
-            <span class="song-duration">
-              3:30
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="4">
-            <span class="song-number-now-playing">
-              <span class="number">5</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
-
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="4"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="4"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="4"></span></span>
-            </div>
-
-            <span class="song-duration">
-              5:12
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="5">
-            <span class="song-number-now-playing">
-              <span class="number">6</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
-
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="5"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="5"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="5"></span></span>
-            </div>
-
-            <span class="song-duration">
-              5:29
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="6">
-            <span class="song-number-now-playing">
-              <span class="number">7</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
-
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="6"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="6"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="6"></span></span>
-            </div>
-
-            <span class="song-duration">
-              5:29
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="7">
-            <span class="song-number-now-playing">
-              <span class="number">8</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
-
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="7"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="7"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="7"></span></span>
-            </div>
-
-            <span class="song-duration">
-              2:39
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="8">
-            <span class="song-number-now-playing">
-              <span class="number">9</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
-
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="8"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="8"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="8"></span></span>
-            </div>
-
-            <span class="song-duration">
-              1:00
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="9">
-            <span class="song-number-now-playing">
-              <span class="number">10</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
-
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="9"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="9"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="9"></span></span>
-            </div>
-
-            <span class="song-duration">
-              5:25
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
-            <span class="song-number-now-playing">
-              <span class="number">11</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
-
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="10"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="10"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="10"></span></span>
-            </div>
-
-            <span class="song-duration">
-              5:40
-            <span>
-          </div>
-        </div>
-
-        <div id="list-screen-footer">
-          <div id="list-screen-meta-container">
-            <span data-amplitude-song-info="name" class="song-name"></span>
-
-            <div class="song-artist-album">
-              <span data-amplitude-song-info="artist"></span>
-            </div>
-          </div>
-          <div class="list-controls">
-            <div class="list-previous amplitude-prev"></div>
-            <div class="list-play-pause amplitude-play-pause"></div>
-            <div class="list-next amplitude-next"></div>
-          </div>
-        </div>
-      </div>
-      <div id="player-screen">
-        <div class="player-header down-header">
-          <img id="down" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/down.svg"/>
-          Show Playlist
-        </div>
-        <div id="player-top">
-          <img data-amplitude-song-info="cover_art_url"/>
-        </div>
-        <div id="player-progress-bar-container">
-          <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
-          <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
-        </div>
-        <div id="player-middle">
-          <div id="time-container">
-            <span class="amplitude-current-time time-container"></span>
-            <span class="amplitude-duration-time time-container"></span>
-          </div>
-          <div id="meta-container">
-            <span data-amplitude-song-info="name" class="song-name"></span>
-
-            <div class="song-artist-album">
-              <span data-amplitude-song-info="artist"></span>
-            </div>
-          </div>
-        </div>
-        <div id="player-bottom">
-          <div id="control-container">
-
-            <div id="shuffle-container">
-              <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
-            </div>
-
-            <div id="prev-container">
-              <div class="amplitude-prev" id="previous"></div>
-            </div>
-
-            <div id="play-pause-container">
-              <div class="amplitude-play-pause" id="play-pause"></div>
-            </div>
-
-            <div id="next-container">
-              <div class="amplitude-next" id="next"></div>
-            </div>
-
-            <div id="repeat-container">
-              <div class="amplitude-repeat" id="repeat"></div>
-            </div>
-
-          </div>
-
-          <div id="volume-container">
-            <img src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/volume.svg"/><input type="range" class="amplitude-volume-slider" step=".1"/>
-          </div>
-        </div>
-      </div>
     </div>
-            
-  </body>
-</html>
-  <script src='https://cdn.jsdelivr.net/npm/amplitudejs@latest/dist/amplitude.min.js'></script>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/html5media/1.1.8/html5media.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/plyr/3.4.7/plyr.min.js'></script>
 
   
 
