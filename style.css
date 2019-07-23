@@ -446,7 +446,7 @@ body {
 
 div#flat-black-player-container {
   position: relative;
-  max-width: 500px;
+  max-width: auto;
   margin: auto; }
 
 /*
