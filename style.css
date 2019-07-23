@@ -5,7 +5,7 @@
   2. Components
 */
 div#list-screen {
-  background-color: #141920;
+  background-color: #3cb371ff;
   position: absolute;
   top: 0;
   right: 0;
@@ -14,7 +14,7 @@ div#list-screen {
   z-index: 9999;
   display: none; }
   div#list-screen div#list-screen-header {
-    background-color: #141920;
+    background-color: #3cb371ff;
     padding: 15px;
     text-align: center;
     height: 25px;
@@ -142,12 +142,12 @@ div#list-screen {
         margin-top: 4px; }
 
 div.player-header {
-  background-color: #141920;
+  background-color: #3cb371ff;
   padding: 15px;
   text-align: center;
   height: 25px;
   position: relative;
-  margin-top: 40px;
+  margin-top: 0px;
   cursor: pointer;
   color: white;
   font-family: "Lato", sans-serif; }
@@ -161,7 +161,7 @@ div#player-top {
   position: relative; }
   div#player-top img[data-amplitude-song-info="cover_art_url"] {
     width: 100%;
-    height: 370px; }
+    height: 300px; }
 
 div#player-progress-bar-container {
   width: 100%;
@@ -252,7 +252,7 @@ div#player-middle {
     line-height: 16px; }
 
 div#player-bottom {
-  background-color: #192029;
+  background-color: #3cb371ff;
   padding-left: 25px;
   padding-right: 25px; }
   div#player-bottom div#control-container {
@@ -269,17 +269,17 @@ div#player-bottom {
       height: 17px;
       cursor: pointer;
       margin: auto;
-      opacity: 0.7; }
+      opacity: 0.8; }
       div#player-bottom div#control-container div#shuffle-container div#shuffle.amplitude-shuffle-off {
         background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/shuffle.svg"); }
       div#player-bottom div#control-container div#shuffle-container div#shuffle.amplitude-shuffle-off:hover {
         background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/shuffle-on.svg");
-        opacity: 0.8; }
+        opacity: 0.9; }
       div#player-bottom div#control-container div#shuffle-container div#shuffle.amplitude-shuffle-on {
         background: url("https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/shuffle-on.svg");
-        opacity: 1; }
+        opacity: 0.8; }
       div#player-bottom div#control-container div#shuffle-container div#shuffle.amplitude-shuffle-on:hover {
-        opacity: 1; }
+        opacity: 0.8; }
   div#player-bottom div#control-container div#prev-container {
     width: 20%;
     float: left;
@@ -362,7 +362,7 @@ div#player-bottom {
       width: 75%;
       height: 2px;
       cursor: pointer;
-      animate: 0.2s;
+      animation: 0.2s;
       background: #cfd8dc; }
     div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider::-webkit-slider-thumb {
       height: 18px;
@@ -378,7 +378,7 @@ div#player-bottom {
       width: 100%;
       height: 1px;
       cursor: pointer;
-      animate: 0.2s;
+      animation: 0.2s;
       background: #cfd8dc; }
     div#player-bottom div#volume-container input[type="range"].amplitude-volume-slider::-moz-range-thumb {
       height: 18px;
@@ -392,7 +392,7 @@ div#player-bottom {
       width: 100%;
       height: 2px;
       cursor: pointer;
-      animate: 0.2s;
+      animation: 0.2s;
       background: #cfd8dc;
       border-width: 15px 0;
       color: transparent;
@@ -446,7 +446,7 @@ body {
 
 div#flat-black-player-container {
   position: relative;
-  max-width: 400px;
+  max-width: 500px;
   margin: auto; }
 
 /*
