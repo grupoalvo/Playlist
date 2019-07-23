@@ -1,288 +1,295 @@
 <!DOCTYPE html>
 <html lang="en" >
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Flat Black Player</title>
-  
-  
-  
-      <link rel="stylesheet" href="./style.css">
-
-  
+  <title>AmplitudeJS Blue Playlist</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
-
 <body>
-
-  <!DOCTYPE html>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>AmplitudeJS Testing</title>
+	<head>
+		<title>AmplitudeJS Testing</title>
 
-    <!-- Include font -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i" rel="stylesheet">
-  </head>
-  <body>
-    <div id="flat-black-player-container">
-      <div id="list-screen" class="slide-in-top">
-        <div id="list-screen-header" class="hide-playlist">
-          <img id="up-arrow" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/up.svg"/>
-          Hide Playlist
-        </div>
+		<!-- Include Style Sheet -->
+		<link rel="stylesheet" type="text/css" href="css/app.css"/>
+	</head>
+	<body>
+		<!-- Blue Playlist Container -->
+		<div id="blue-playlist-container">
 
-        <div id="list">
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
-            <span class="song-number-now-playing">
-              <span class="number">1</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
+			<!-- Amplitude Player -->
+			<div id="amplitude-player">
 
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="0"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="0"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="0"></span></span>
+				<!-- Left Side Player -->
+				<div id="amplitude-left">
+					<img data-amplitude-song-info="cover_art_url" class="album-art"/>
+          <div class="amplitude-visualization" id="large-visualization">
+
             </div>
+					<div id="player-left-bottom">
+						<div id="time-container">
+							<span class="current-time">
+								<span class="amplitude-current-minutes" ></span>:<span class="amplitude-current-seconds"></span>
+							</span>
+							<div id="progress-container">
+								<div class="amplitude-wave-form">
 
-            <span class="song-duration">
-              3:30
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1">
-            <span class="song-number-now-playing">
-              <span class="number">2</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
+                        </div>
+                <input type="range" class="amplitude-song-slider"/>
+								<progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
+								<progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+							</div>
+							<span class="duration">
+								<span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
+							</span>
+						</div>
 
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="1"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="1"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="1"></span></span>
-            </div>
+						<div id="control-container">
+							<div id="repeat-container">
+								<div class="amplitude-repeat" id="repeat"></div>
+								<div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+							</div>
 
-            <span class="song-duration">
-              3:16
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2">
-            <span class="song-number-now-playing">
-              <span class="number">3</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
+							<div id="central-control-container">
+								<div id="central-controls">
+									<div class="amplitude-prev" id="previous"></div>
+									<div class="amplitude-play-pause" id="play-pause"></div>
+									<div class="amplitude-next" id="next"></div>
+								</div>
+							</div>
 
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="2"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="2"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="2"></span></span>
-            </div>
+							<div id="volume-container">
+								<div class="volume-controls">
+									<div class="amplitude-mute amplitude-not-muted"></div>
+									<input type="range" class="amplitude-volume-slider"/>
+									<div class="ms-range-fix"></div>
+								</div>
+								<div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle-right"></div>
+							</div>
+						</div>
 
-            <span class="song-duration">
-              3:32
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="3">
-            <span class="song-number-now-playing">
-              <span class="number">4</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
+						<div id="meta-container">
+							<span data-amplitude-song-info="name" class="song-name"></span>
 
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="3"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="3"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="3"></span></span>
-            </div>
+							<div class="song-artist-album">
+								<span data-amplitude-song-info="artist"></span>
+								<span data-amplitude-song-info="album"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Left Side Player -->
 
-            <span class="song-duration">
-              3:30
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="4">
-            <span class="song-number-now-playing">
-              <span class="number">5</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
+				<!-- Right Side Player -->
+				<div id="amplitude-right">
+					<div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="0">
+						<div class="song-now-playing-icon-container">
+							<div class="play-button-container">
 
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="4"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="4"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="4"></span></span>
-            </div>
+							</div>
+							<img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+						</div>
+						<div class="song-meta-data">
+							<span class="song-title">Risin' High (feat Raashan Ahmad)</span>
+							<span class="song-artist">Ancient Astronauts</span>
+						</div>
+						<a href="https://switchstancerecordings.bandcamp.com/track/risin-high-feat-raashan-ahmad" class="bandcamp-link" target="_blank">
+							<img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg"/>
+							<img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+						</a>
+						<span class="song-duration">3:30</span>
+					</div>
+					<div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="1">
+						<div class="song-now-playing-icon-container">
+							<div class="play-button-container">
 
-            <span class="song-duration">
-              5:12
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="5">
-            <span class="song-number-now-playing">
-              <span class="number">6</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
+							</div>
+							<img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+						</div>
+						<div class="song-meta-data">
+							<span class="song-title">The Gun</span>
+							<span class="song-artist">Lorn</span>
+						</div>
+						<a href="https://lorn.bandcamp.com/" class="bandcamp-link" target="_blank">
+							<img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg"/>
+							<img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+						</a>
+						<span class="song-duration">3:16</span>
+					</div>
+					<div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="2">
+						<div class="song-now-playing-icon-container">
+							<div class="play-button-container">
 
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="5"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="5"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="5"></span></span>
-            </div>
+							</div>
+							<img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+						</div>
+						<div class="song-meta-data">
+							<span class="song-title">Anvil</span>
+							<span class="song-artist">Lorn</span>
+						</div>
+						<a href="https://lorn.bandcamp.com/" class="bandcamp-link" target="_blank">
+							<img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg"/>
+							<img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+						</a>
+						<span class="song-duration">3:32</span>
+					</div>
+					<div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="3">
+						<div class="song-now-playing-icon-container">
+							<div class="play-button-container">
 
-            <span class="song-duration">
-              5:29
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="6">
-            <span class="song-number-now-playing">
-              <span class="number">7</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
+							</div>
+							<img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+						</div>
+						<div class="song-meta-data">
+							<span class="song-title">I Came Running</span>
+							<span class="song-artist">Ancient Astronauts</span>
+						</div>
+						<a href="https://switchstancerecordings.bandcamp.com/track/i-came-running" class="bandcamp-link" target="_blank">
+							<img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg"/>
+							<img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+						</a>
+						<span class="song-duration">3:30</span>
+					</div>
+					<div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="4">
+						<div class="song-now-playing-icon-container">
+							<div class="play-button-container">
 
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="6"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="6"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="6"></span></span>
-            </div>
+							</div>
+							<img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+						</div>
+						<div class="song-meta-data">
+							<span class="song-title">First Snow</span>
+							<span class="song-artist">Emancipator</span>
+						</div>
+						<a href="https://emancipator.bandcamp.com" class="bandcamp-link" target="_blank">
+							<img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg"/>
+							<img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+						</a>
+						<span class="song-duration">5:12</span>
+					</div>
+					<div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="5">
+						<div class="song-now-playing-icon-container">
+							<div class="play-button-container">
 
-            <span class="song-duration">
-              5:29
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="7">
-            <span class="song-number-now-playing">
-              <span class="number">8</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
+							</div>
+							<img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+						</div>
+						<div class="song-meta-data">
+							<span class="song-title">Terrain</span>
+							<span class="song-artist">pg.lost</span>
+						</div>
+						<a href="https://pglost.bandcamp.com/track/terrain" class="bandcamp-link" target="_blank">
+							<img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg"/>
+							<img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+						</a>
+						<span class="song-duration">5:29</span>
+					</div>
+					<div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="6">
+						<div class="song-now-playing-icon-container">
+							<div class="play-button-container">
 
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="7"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="7"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="7"></span></span>
-            </div>
+							</div>
+							<img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+						</div>
+						<div class="song-meta-data">
+							<span class="song-title">Vorel</span>
+							<span class="song-artist">Russian Circles</span>
+						</div>
+						<a href="https://russiancircles.bandcamp.com/track/vorel" class="bandcamp-link" target="_blank">
+							<img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg"/>
+							<img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+						</a>
+						<span class="song-duration">5:29</span>
+					</div>
+					<div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="7">
+						<div class="song-now-playing-icon-container">
+							<div class="play-button-container">
 
-            <span class="song-duration">
-              2:39
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="8">
-            <span class="song-number-now-playing">
-              <span class="number">9</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
+							</div>
+							<img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+						</div>
+						<div class="song-meta-data">
+							<span class="song-title">Intro / Sweet Glory</span>
+							<span class="song-artist">Jimkata</span>
+						</div>
+						<a href="http://jimkata.bandcamp.com/track/intro-sweet-glory" class="bandcamp-link" target="_blank">
+							<img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg"/>
+							<img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+						</a>
+						<span class="song-duration">2:39</span>
+					</div>
+					<div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="8">
+						<div class="song-now-playing-icon-container">
+							<div class="play-button-container">
 
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="8"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="8"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="8"></span></span>
-            </div>
+							</div>
+							<img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+						</div>
+						<div class="song-meta-data">
+							<span class="song-title">Offcut #6</span>
+							<span class="song-artist">Little People</span>
+						</div>
+						<a href="https://littlepeople.bandcamp.com/track/offcut-6" class="bandcamp-link" target="_blank">
+							<img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg"/>
+							<img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+						</a>
+						<span class="song-duration">1:00</span>
+					</div>
+					<div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="9">
+						<div class="song-now-playing-icon-container">
+							<div class="play-button-container">
 
-            <span class="song-duration">
-              1:00
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="9">
-            <span class="song-number-now-playing">
-              <span class="number">10</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
+							</div>
+							<img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+						</div>
+						<div class="song-meta-data">
+							<span class="song-title">Dusk To Dawn</span>
+							<span class="song-artist">Emancipator</span>
+						</div>
+						<a href="https://emancipator.bandcamp.com/track/dusk-to-dawn-2" class="bandcamp-link" target="_blank">
+							<img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg"/>
+							<img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+						</a>
+						<span class="song-duration">5:25</span>
+					</div>
+					<div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
+						<div class="song-now-playing-icon-container">
+							<div class="play-button-container">
 
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="9"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="9"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="9"></span></span>
-            </div>
+							</div>
+							<img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/now-playing.svg"/>
+						</div>
+						<div class="song-meta-data">
+							<span class="song-title">Anthem</span>
+							<span class="song-artist">Emancipator</span>
+						</div>
+						<a href="https://emancipator.bandcamp.com/track/anthem" class="bandcamp-link" target="_blank">
+							<img class="bandcamp-grey" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-grey.svg"/>
+							<img class="bandcamp-white" src="https://521dimensions.com/img/open-source/amplitudejs/blue-player/bandcamp-white.svg"/>
+						</a>
+						<span class="song-duration">5:40</span>
+					</div>
+				</div>
+				<!-- End Right Side Player -->
+			</div>
+			<!-- End Amplitdue Player -->
+      
+      <a style="background: #00a0ff;-webkit-box-shadow: 0 1px 0 0 #003da5; box-shadow: 0 1px 0 0 #003da5; border-radius: 4px; display: block; width: 300px; text-align: center; height: 60px; line-height: 60px; color: #fff; cursor: pointer; font-size: 18px; font-weight: 700; margin: auto; margin-bottom: 20px; text-decoration: none;" href="https://serversideup.net/courses/amplitudejs-from-the-ground-up/" target="_blank">Learn More on Server Side Up</a>
+		</div>
+		
+		<!--
+			Include UX functions JS
 
-            <span class="song-duration">
-              5:25
-            <span>
-          </div>
-          <div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="10">
-            <span class="song-number-now-playing">
-              <span class="number">11</span>
-              <img class="now-playing" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/now-playing.svg"/>
-            </span>
-
-            <div class="song-meta-container">
-              <span class="song-name" data-amplitude-song-info="name" data-amplitude-song-index="10"></span>
-              <span class="song-artist-album"><span data-amplitude-song-info="artist" data-amplitude-song-index="10"></span> - <span data-amplitude-song-info="album" data-amplitude-song-index="10"></span></span>
-            </div>
-
-            <span class="song-duration">
-              5:40
-            <span>
-          </div>
-        </div>
-
-        <div id="list-screen-footer">
-          <div id="list-screen-meta-container">
-            <span data-amplitude-song-info="name" class="song-name"></span>
-
-            <div class="song-artist-album">
-              <span data-amplitude-song-info="artist"></span>
-            </div>
-          </div>
-          <div class="list-controls">
-            <div class="list-previous amplitude-prev"></div>
-            <div class="list-play-pause amplitude-play-pause"></div>
-            <div class="list-next amplitude-next"></div>
-          </div>
-        </div>
-      </div>
-      <div id="player-screen">
-        <div class="player-header down-header">
-          <img id="down" src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/down.svg"/>
-          Show Playlist
-        </div>
-        <div id="player-top">
-          <img data-amplitude-song-info="cover_art_url"/>
-        </div>
-        <div id="player-progress-bar-container">
-          <progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
-          <progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
-        </div>
-        <div id="player-middle">
-          <div id="time-container">
-            <span class="amplitude-current-time time-container"></span>
-            <span class="amplitude-duration-time time-container"></span>
-          </div>
-          <div id="meta-container">
-            <span data-amplitude-song-info="name" class="song-name"></span>
-
-            <div class="song-artist-album">
-              <span data-amplitude-song-info="artist"></span>
-            </div>
-          </div>
-        </div>
-        <div id="player-bottom">
-          <div id="control-container">
-
-            <div id="shuffle-container">
-              <div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
-            </div>
-
-            <div id="prev-container">
-              <div class="amplitude-prev" id="previous"></div>
-            </div>
-
-            <div id="play-pause-container">
-              <div class="amplitude-play-pause" id="play-pause"></div>
-            </div>
-
-            <div id="next-container">
-              <div class="amplitude-next" id="next"></div>
-            </div>
-
-            <div id="repeat-container">
-              <div class="amplitude-repeat" id="repeat"></div>
-            </div>
-
-          </div>
-
-          <div id="volume-container">
-            <img src="https://521dimensions.com/img/open-source/amplitudejs/examples/flat-black/volume.svg"/><input type="range" class="amplitude-volume-slider" step=".1"/>
-          </div>
-        </div>
-      </div>
-    </div>
-            
-    <a href="https://serversideup.net/courses/amplitudejs-from-the-ground-up/" class="learn-more">Learn More on Server Side Up</a>
-  </body>
+			NOTE: These are for handling things outside of the scope of AmplitudeJS
+		-->
+		<script type="text/javascript" src="js/functions.js"></script>
+	</body>
 </html>
+<!-- partial -->
   <script src='https://cdn.jsdelivr.net/npm/amplitudejs@latest/dist/amplitude.min.js'></script>
-
-  
-
-    <script  src="./script.js"></script>
-
-
-
+<script  src="./script.js"></script>
 
 </body>
-
 </html>
