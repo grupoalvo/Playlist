@@ -74,11 +74,11 @@ Amplitude.init({
 			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1563845795/Images%20App/002_iqzsbv.jpg"
 		},
 		{
-			"name": "Anvil",
-			"artist": "Lorn",
-			"album": "Anvil",
-			"url": "https://521dimensions.com/song/LORN - ANVIL.mp3",
-			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/anvil.jpg"
+			"name": "Capítulo II - Seção II",
+			"artist": "CTB",
+			"album": "",
+			"url": "https://res.cloudinary.com/thay01/video/upload/v1563288054/Audio/Cap02s2_vc2u5a.mp3",
+			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1563846594/Images%20App/005_gyhawn.jpg"
 		},
 		{
 			"name": "I Came Running",
