@@ -81,52 +81,52 @@ Amplitude.init({
 			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1563846594/Images%20App/005_gyhawn.jpg"
 		},
 		{
-			"name": "I Came Running",
-			"artist": "Ancient Astronauts",
-			"album": "We Are to Answer",
-			"url": "https://521dimensions.com/song/ICameRunning-AncientAstronauts.mp3",
+			"name": "Capítulo III",
+			"artist": "CTB",
+			"album": "",
+			"url": "https://res.cloudinary.com/thay01/video/upload/v1563375085/Audio/Cap03_d29vhx.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/we-are-to-answer.jpg"
 		},
 		{
-			"name": "First Snow",
-			"artist": "Emancipator",
-			"album": "Soon It Will Be Cold Enough",
-			"url": "https://521dimensions.com/song/FirstSnow-Emancipator.mp3",
+			"name": "Capítulo III - A",
+			"artist": "CTB",
+			"album": "",
+			"url": "https://res.cloudinary.com/thay01/video/upload/v1563376355/Audio/Cap03a_h2v1jo.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
 		},
 		{
-			"name": "Terrain",
-			"artist": "pg.lost",
-			"album": "Key",
-			"url": "https://521dimensions.com/song/Terrain-pglost.mp3",
+			"name": "Capítulo IV",
+			"artist": "CTB",
+			"album": "",
+			"url": "https://res.cloudinary.com/thay01/video/upload/v1563378701/Audio/Cap04_c2ltyx.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/key.jpg"
 		},
 		{
-			"name": "Vorel",
-			"artist": "Russian Circles",
-			"album": "Guidance",
-			"url": "https://521dimensions.com/song/Vorel-RussianCircles.mp3",
+			"name": "Capítulo V",
+			"artist": "CTB",
+			"album": "",
+			"url": "https://res.cloudinary.com/thay01/video/upload/v1563378853/Audio/Cap05_zuv3uh.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/guidance.jpg"
 		},
 		{
-			"name": "Intro / Sweet Glory",
-			"artist": "Jimkata",
-			"album": "Die Digital",
-			"url": "https://521dimensions.com/song/IntroSweetGlory-Jimkata.mp3",
+			"name": "Capítulo VI",
+			"artist": "CTB",
+			"album": "",
+			"url": "https://res.cloudinary.com/thay01/video/upload/v1563380032/Audio/Cap06_x5mcwo.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/die-digital.jpg"
 		},
 		{
-			"name": "Offcut #6",
-			"artist": "Little People",
-			"album": "We Are But Hunks of Wood Remixes",
-			"url": "https://521dimensions.com/song/Offcut6-LittlePeople.mp3",
+			"name": "Capítulo VII",
+			"artist": "CTB",
+			"album": "",
+			"url": "https://res.cloudinary.com/thay01/video/upload/v1563380050/Audio/Cap07_exwtat.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/we-are-but-hunks-of-wood.jpg"
 		},
 		{
-			"name": "Dusk To Dawn",
-			"artist": "Emancipator",
-			"album": "Dusk To Dawn",
-			"url": "https://521dimensions.com/song/DuskToDawn-Emancipator.mp3",
+			"name": "Capítulo VIII",
+			"artist": "CTB",
+			"album": "",
+			"url": "https://res.cloudinary.com/thay01/video/upload/v1563381368/Audio/Cap08_q4a0eg.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/from-dusk-to-dawn.jpg"
 		},
 		{
