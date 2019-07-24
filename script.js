@@ -85,56 +85,56 @@ Amplitude.init({
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563375085/Audio/Cap03_d29vhx.mp3",
-			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/we-are-to-answer.jpg"
+			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1563846597/Images%20App/004_bzvjc8.jpg"
 		},
 		{
 			"name": "Capítulo III - A",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563376355/Audio/Cap03a_h2v1jo.mp3",
-			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
+			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1563846600/Images%20App/003_wmgmrf.jpg"
 		},
 		{
 			"name": "Capítulo IV",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563378701/Audio/Cap04_c2ltyx.mp3",
-			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/key.jpg"
+			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1564003441/Images%20App/006_lox7tv.jpg"
 		},
 		{
 			"name": "Capítulo V",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563378853/Audio/Cap05_zuv3uh.mp3",
-			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/guidance.jpg"
+			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1564003617/Images%20App/007_n9y4nc.jpg"
 		},
 		{
 			"name": "Capítulo VI",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563380032/Audio/Cap06_x5mcwo.mp3",
-			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/die-digital.jpg"
+			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1564004208/Images%20App/009_o9exdv.jpg"
 		},
 		{
 			"name": "Capítulo VII",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563380050/Audio/Cap07_exwtat.mp3",
-			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/we-are-but-hunks-of-wood.jpg"
+			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1564003975/Images%20App/008_rapudp.jpg"
 		},
 		{
 			"name": "Capítulo VIII",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563381368/Audio/Cap08_q4a0eg.mp3",
-			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/from-dusk-to-dawn.jpg"
+			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1564004304/Images%20App/011_rq9wdz.jpg"
 		},
 		{
 			"name": "Capítulo IX - Seção I",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563381359/Audio/Cap09_fq7rtp.mp3",
-			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
+			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1564004777/Images%20App/012_xipbat.jpg"
 		}
 		{
 			"name": "Capítulo IX - Seção II",
@@ -197,7 +197,7 @@ Amplitude.init({
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563748396/Audio/Cap15_upxskb.mp3",
-			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
+			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1564004213/Images%20App/010_dbrs9x.jpg"
 		}
 		{
 			"name": "Capítulo XVI",
