@@ -135,112 +135,112 @@ Amplitude.init({
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563381359/Audio/Cap09_fq7rtp.mp3",
 			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1564004777/Images%20App/012_xipbat.jpg"
-		}
+		},
 		{
 			"name": "Capítulo IX - Seção II",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563382324/Audio/Cap09s2_hxfxam.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
-		}
+		},
 		{
 			"name": "Capítulo IX - Seção III",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563384514/Audio/Cap09s3_jsgrhg.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
-		}
+		},
 		{
 			"name": "Capítulo X",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563384508/Audio/Cap10_d61urt.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
-		}
+		},
 		{
 			"name": "Capítulo XI",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563385068/Audio/Cap11_jio4ju.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
-		}
+		},
 		{
 			"name": "Capítulo XII",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563385372/Audio/Cap12_jvqxam.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
-		}
+		},
 		{
 			"name": "Capítulo XIII",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563385585/Audio/Cap13_hr634h.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
-		}
+		},
 		{
 			"name": "Capítulo XIII - A",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563386132/Audio/Cap13a_peqmc1.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
-		}
+		},
 		{
 			"name": "Capítulo XIV",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563387531/Audio/Cap14_edsflw.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
-		}
+		},
 		{
 			"name": "Capítulo XV",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563748396/Audio/Cap15_upxskb.mp3",
 			"cover_art_url": "https://res.cloudinary.com/thay01/image/upload/v1564004213/Images%20App/010_dbrs9x.jpg"
-		}
+		},
 		{
 			"name": "Capítulo XVI",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563748490/Audio/Cap16_uuah0i.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
-		}
+		},
 		{
 			"name": "Capítulo XVII",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563748504/Audio/Cap17_kmp503.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
-		}
+		},
 		{
 			"name": "Capítulo XVIII - Seção I",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563416270/Audio/Cap18s1_ddgk1b.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
-		}
+		},
 		{
 			"name": "Capítulo XVIII - Seção II",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563748482/Audio/Cap18s2_dpnrl1.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
-		}
+		},
 		{
 			"name": "Capítulo XIX - Seção I",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563413930/Audio/Cap19s1_qt5xek.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
-		}
+		},
 		{
 			"name": "Capítulo XIX - Seção II",
 			"artist": "CTB",
 			"album": "",
 			"url": "https://res.cloudinary.com/thay01/video/upload/v1563416063/Audio/Cap19s2_ncgidz.mp3",
 			"cover_art_url": "https://521dimensions.com/img/open-source/amplitudejs/album-art/soon-it-will-be-cold-enough.jpg"
-		}
+		},
 		{
 			"name": "Capítulo XX",
 			"artist": "CTB",
